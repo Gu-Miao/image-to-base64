@@ -19,11 +19,10 @@ $(function () {
         const file = item.getAsFile()
         return parseFile(file)
       }
-
       // handle origin url
       if (/text\/plain/.test(type)) {
         const url = await new Promise(res => item.getAsString(url => res(url)))
-        if (/^https?:\/\/(.+\/)+.+(\.(gif|png|jpg|jpeg|webp|svg|psd|bmp|tif))$/i.test(url)) {
+        if (/^https?:\/\/(.+\/)/i.test(url)) {
           return parseUrl(url)
         }
       }
