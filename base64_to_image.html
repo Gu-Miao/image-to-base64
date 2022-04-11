@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Convert Image to Base64" />
+    <title>Convert Base64 to Image</title>
+    <link rel="shortcut icon" href="./src/logo.png" type="image/png" />
+    <link rel="stylesheet" href="./src/global.less" />
+    <link rel="stylesheet" href="./src/bti.less" />
+  </head>
+  <body>
+    <nav>
+      <h1>Convert Base64 to Image</h1>
+      <span><a href="./index.html">base64 to image</a></span>
+    </nav>
+    <main>
+      <div class="result-wrapper">
+        <textarea id="result" placeholder="Please input base64 code."></textarea>
+      </div>
+      <div class="upload-wrapper">
+        <p>Show image here.</p>
+        <img id="img" src="" alt="image result" style="display: none" />
+      </div>
+    </main>
+    <ul></ul>
+  </body>
+  <script type="module" src="./src/bti.js"></script>
+</html>
