@@ -1,3 +1,6 @@
+import $ from 'jquery'
+import ClipboardJS from 'clipboard'
+
 let _upload
 let _result
 let _uploadWrapper
@@ -100,19 +103,4 @@ function parseUrl(url) {
     _uploadWrapper.find('p').html('Image is from net')
   }
   img.src = url
-}
-
-/**
- * format image/data URI size with B/KB/MB.
- * @param {number} size image/data URI size.
- * @returns {string} formatted size.
- */
-function sizeFormat(size) {
-  if (size < 1024) {
-    return `${size} B`
-  } else if (size < 1024 * 1024) {
-    return `${(size / 1024).toFixed(2)} KB`
-  } else {
-    return `${(size / 1024 / 1024).toFixed(2)} MB`
-  }
 }
