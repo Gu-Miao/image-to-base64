@@ -2,5 +2,7 @@
   "name": "image to base64",
   "description": "Convert image file to base64",
   "index": "dist/index.html",
-  "preload": "preload.js"
+  "preload": "preload.js",
+  "author": "Gu Miao",
+  "keywords": ["image", "base64"]
 }
