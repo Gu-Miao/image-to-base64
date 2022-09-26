@@ -1,34 +1,6 @@
 {
-  "name": "@miyaneee/image-to-base64",
-  "version": "0.1.1",
-  "description": "Simple app of converting image to base64, support image file upload, clipborad data, net image url.",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Miyaneee/image-to-base64.git"
-  },
-  "keywords": [
-    "jquery",
-    "base64",
-    "clipboard",
-    "miyanee-app"
-  ],
-  "author": {
-    "name": "Gu Miao",
-    "email": "gutianhuang@foxmail.com",
-    "url": "https://github.com/Gu-Miao"
-  },
+  "name": "image-to-base64",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Miyaneee/image-to-base64/issues"
-  },
-  "homepage": "https://github.com/Miyaneee/image-to-base64#readme",
-  "files": [
-    "README.md",
-    "LICENSE",
-    "miyanee.json",
-    "preload.js",
-    "dist"
-  ],
   "scripts": {
     "start": "vite",
     "build": "vite build"

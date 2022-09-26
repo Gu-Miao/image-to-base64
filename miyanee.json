@@ -1,7 +1,0 @@
-{
-  "name": "image to base64",
-  "description": "Convert image file to base64",
-  "index": "dist/index.html",
-  "author": "Gu Miao",
-  "keywords": ["image", "base64"]
-}
