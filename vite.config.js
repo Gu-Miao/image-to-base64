@@ -1,20 +1,20 @@
-import { defineConfig } from 'vite'
-import { createHtmlPlugin } from 'vite-plugin-html'
-import path from 'node:path'
+import { defineConfig } from "vite";
+import { createHtmlPlugin } from "vite-plugin-html";
+import path from "node:path";
 
 export default defineConfig(({ mode }) => ({
-  base: './',
+  base: "./",
   plugins: [
     createHtmlPlugin({
-      minify: mode === 'production',
+      minify: mode === "production",
     }),
   ],
   build: {
     rollupOptions: {
       input: {
-        main: path.resolve(__dirname, 'index.html'),
-        nested: path.resolve(__dirname, 'base64_to_image.html'),
+        main: path.resolve(__dirname, "index.html"),
+        nested: path.resolve(__dirname, "base64_to_image.html"),
       },
     },
   },
-}))
+}));
